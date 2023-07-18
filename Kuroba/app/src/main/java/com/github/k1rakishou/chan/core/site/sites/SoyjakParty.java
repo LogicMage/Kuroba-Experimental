@@ -110,7 +110,7 @@ public class SoyjakParty extends CommonSite {
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "pol"), "Politics"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "incel"), "Internet Celebrities"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "raid"), "Raid"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "mtv"), "Music, Television, Video games"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "mtv"), "Music, Television, Video games")
         );
 
         setResolvable(URL_HANDLER);
