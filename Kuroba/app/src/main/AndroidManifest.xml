@@ -129,8 +129,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <data android:host="vhschan.org" />
                 <data android:host="www.vhschan.org" />
 
-                <data android:host="soyjak.party" />
-                <data android:host="www.soyjak.party" />
+                <data android:host="soyjaks.party" />
+                <data android:host="www.soyjaks.party" />
 
                 <data android:host="archived.moe" />
                 <data android:host="www.archived.moe" />

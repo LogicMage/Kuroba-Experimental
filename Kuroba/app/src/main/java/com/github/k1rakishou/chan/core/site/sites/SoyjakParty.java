@@ -50,7 +50,7 @@ public class SoyjakParty extends CommonSite {
     public static final SiteDescriptor SITE_DESCRIPTOR = SiteDescriptor.Companion.create(SITE_NAME);
 
     public static final CommonSiteUrlHandler URL_HANDLER = new CommonSiteUrlHandler() {
-        private static final String ROOT = "https://soyjack.party/";
+        private static final String ROOT = "https://soyjaks.party/";
 
         @Override
         public Class<? extends Site> getSiteClass() {
@@ -97,20 +97,35 @@ public class SoyjakParty extends CommonSite {
     public void setup() {
         setEnabled(true);
         setName(SITE_NAME);
-        setIcon(SiteIcon.fromFavicon(getImageLoaderV2(), HttpUrl.parse("https://soyjak.party/favicon.ico")));
+        setIcon(SiteIcon.fromFavicon(getImageLoaderV2(), HttpUrl.parse("https://soyjaks.party/favicon.ico")));
 
         setBoards(
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "q"), "Drama and Meta-drama"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "soy"), "Soyjaks"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "qa"), "Question & Answer"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "r"), "Requests"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "nate"), "Coals"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "suggest"), "Suggestions"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "raid"), "Raid"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "craft"), "Minecraft"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "fnac"), "Five Nights at Cobson's"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "fit"), "Fitness"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "incel"), "Internet Celebrities"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "mtv"), "Music, Television, Video games")
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "pol"), "Politics"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "sci"), "Soyence and Technology"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "x"), "Paranormal/Schizo"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "tv"), "Television"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "webm"), "WEBM"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "tech"), "Technology"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "int"), "International"),
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "giga"), "Gigachad"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "a"), "Anime"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "r"), "Requests"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "pol"), "Politics"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "incel"), "Internet Celebrities"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "raid"), "Raid"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "mtv"), "Music, Television, Video games")
+                
+
+
+                
+
         );
 
         setResolvable(URL_HANDLER);
@@ -122,7 +137,7 @@ public class SoyjakParty extends CommonSite {
             }
         });
 
-        setEndpoints(new VichanEndpoints(this, "https://soyjak.party", "https://soyjak.party"));
+        setEndpoints(new VichanEndpoints(this, "https://soyjaks.party", "https://soyjaks.party"));
         setActions(new VichanActions(this, getProxiedOkHttpClient(), getSiteManager(), getReplyManager()));
         setApi(new VichanApi(getSiteManager(), getBoardManager(), this));
         setParser(new VichanCommentParser());
