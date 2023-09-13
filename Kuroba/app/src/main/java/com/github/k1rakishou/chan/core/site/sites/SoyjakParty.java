@@ -120,12 +120,7 @@ public class SoyjakParty extends CommonSite {
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "tech"), "Technology"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "int"), "International"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "giga"), "Gigachad"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "a"), "Anime"),
-                
-
-
-                
-
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "a"), "Anime")
         );
 
         setResolvable(URL_HANDLER);
