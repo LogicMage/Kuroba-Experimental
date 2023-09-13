@@ -111,7 +111,7 @@ public class SoyjakParty extends CommonSite {
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "fnac"), "Five Nights at Cobson's"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "fit"), "Fitness"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "incel"), "Internet Celebrities"),
-                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "mtv"), "Music, Television, Video games")
+                ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "mtv"), "Music, Television, Video games"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "pol"), "Politics"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "sci"), "Soyence and Technology"),
                 ChanBoard.create(BoardDescriptor.create(siteDescriptor().getSiteName(), "x"), "Paranormal/Schizo"),
